@@ -13,6 +13,8 @@
 		C438124E1BFF53E30089D58D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C438124D1BFF53E30089D58D /* Assets.xcassets */; };
 		C43812511BFF53E30089D58D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C438124F1BFF53E30089D58D /* LaunchScreen.storyboard */; };
 		C438125C1BFF53E30089D58D /* SplashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C438125B1BFF53E30089D58D /* SplashUITests.swift */; };
+		C43812671BFF56DC0089D58D /* Saturn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C43812661BFF56DC0089D58D /* Saturn.framework */; };
+		C470BD581BFF7F4E00E70F7F /* splash.xml in Resources */ = {isa = PBXBuildFile; fileRef = C470BD571BFF7F4E00E70F7F /* splash.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		C43812571BFF53E30089D58D /* SplashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C438125B1BFF53E30089D58D /* SplashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashUITests.swift; sourceTree = "<group>"; };
 		C438125D1BFF53E30089D58D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C43812661BFF56DC0089D58D /* Saturn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Saturn.framework; path = "Saturn/build/Debug-iphoneos/Saturn.framework"; sourceTree = "<group>"; };
+		C470BD571BFF7F4E00E70F7F /* splash.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = splash.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C43812671BFF56DC0089D58D /* Saturn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +66,7 @@
 			children = (
 				C43812451BFF53E30089D58D /* Splash */,
 				C438125A1BFF53E30089D58D /* SplashUITests */,
+				C43812681BFF56FF0089D58D /* Frameworks */,
 				C43812441BFF53E30089D58D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,6 +89,7 @@
 				C438124D1BFF53E30089D58D /* Assets.xcassets */,
 				C438124F1BFF53E30089D58D /* LaunchScreen.storyboard */,
 				C43812521BFF53E30089D58D /* Info.plist */,
+				C470BD571BFF7F4E00E70F7F /* splash.xml */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -94,6 +101,14 @@
 				C438125D1BFF53E30089D58D /* Info.plist */,
 			);
 			path = SplashUITests;
+			sourceTree = "<group>";
+		};
+		C43812681BFF56FF0089D58D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C43812661BFF56DC0089D58D /* Saturn.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C470BD581BFF7F4E00E70F7F /* splash.xml in Resources */,
 				C43812511BFF53E30089D58D /* LaunchScreen.storyboard in Resources */,
 				C438124E1BFF53E30089D58D /* Assets.xcassets in Resources */,
 				C438124C1BFF53E30089D58D /* Main.storyboard in Resources */,
@@ -327,6 +343,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Splash/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.smallplanet.Splash;
@@ -338,6 +355,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Splash/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.smallplanet.Splash;
@@ -388,6 +406,7 @@
 				C43812621BFF53E30089D58D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C43812631BFF53E30089D58D /* Build configuration list for PBXNativeTarget "SplashUITests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +415,7 @@
 				C43812651BFF53E30089D58D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

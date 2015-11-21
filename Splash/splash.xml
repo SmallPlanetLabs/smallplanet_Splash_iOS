@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIView id="root" backgroundColor="#ab4590" xmlns="http://schema.smallplanet.com/PlanetUI">
+  <NSLayoutConstraint firstItem="root" ruleSet="fillSuperview" />
+
+    <UIImageView id="background" image="background" contentMode="scaleAspectFill" />
+    <NSLayoutConstraint firstItem="background" ruleSet="fillSuperview" />
+
+    <UIView id="container" backgroundColor="#AA000088">
+
+        <UILabel id="versionHeader" fontName="AvenirNext-Regular" fontSize="50" textColor="black" textAlignment="center" adjustsFontSizeToFitWidth="true" minimumScaleFactor="0.1" text="iOS version"/>
+        <NSLayoutConstraint firstItem="versionHeader" firstAttribute="centerX" secondItem="parent" secondAttribute="centerX" />
+        <NSLayoutConstraint firstItem="versionHeader" firstAttribute="top" secondItem="parent" secondAttribute="top" />
+
+        <UILabel id="version" fontName="AvenirNext-Heavy" fontSize="120" textColor="black" textAlignment="center" adjustsFontSizeToFitWidth="true" minimumScaleFactor="0.1" text="9.1" numberOfLines="1"/>
+        <NSLayoutConstraint firstItem="version" firstAttribute="centerX" secondItem="parent" secondAttribute="centerX" />
+        <NSLayoutConstraint firstItem="version" firstAttribute="top" secondItem="versionHeader" secondAttribute="bottom" constant="40" />
+
+        <UILabel id="hardware" fontName="AvenirNext-Regular" fontSize="50" textColor="#000000" textAlignment="center" adjustsFontSizeToFitWidth="true" minimumScaleFactor="0.1"/>
+        <NSLayoutConstraint firstItem="hardware" firstAttribute="centerX" secondItem="parent" secondAttribute="centerX" />
+        <NSLayoutConstraint firstItem="hardware" firstAttribute="top" secondItem="version" secondAttribute="bottom" constant="40" />
+
+        <UILabel id="warning" fontName="AvenirNext-Regular" fontSize="22" textColor="#000000" textAlignment="center" adjustsFontSizeToFitWidth="false" numberOfLines="0" text="Please do not upgrade iOS on this device"/>
+        <NSLayoutConstraint firstItem="warning" firstAttribute="centerX" secondItem="parent" secondAttribute="centerX" />
+        <NSLayoutConstraint firstItem="warning" firstAttribute="top" secondItem="hardware" secondAttribute="bottom" constant="40" />
+        <NSLayoutConstraint firstItem="warning" firstAttribute="bottom" secondItem="parent" secondAttribute="bottom" />
+
+    </UIView>
+    <NSLayoutConstraint firstItem="container" firstAttribute="centerX" secondItem="parent" secondAttribute="centerX" />
+    <NSLayoutConstraint firstItem="container" firstAttribute="width" secondItem="parent" secondAttribute="width" />
+    <NSLayoutConstraint firstItem="container" firstAttribute="centerY" secondItem="parent" secondAttribute="centerY" />
+
+    <UIButton id="shareButton" />
+    <NSLayoutConstraint firstItem="shareButton" ruleSet="fillSuperview" />
+
+</UIView>
