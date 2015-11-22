@@ -2,35 +2,42 @@
 <UIView id="root" backgroundColor="white" xmlns="http://schema.smallplanet.com/PlanetUI">
   <NSLayoutConstraint firstItem="root" ruleSet="fillSuperview" />
 
-    <UIImageView id="background" image="background" contentMode="scaleAspectFit" />
-    <NSLayoutConstraint firstItem="background" secondItem="parent" ruleSet="equalSize" />
+    <UIImageView id="background" image="background" contentMode="scaleAspectFill" backgroundColor="red"/>
+    <NSLayoutConstraint firstItem="background" firstAttribute="width" secondItem="parent" secondAttribute="width" />
+    <NSLayoutConstraint firstItem="background" firstAttribute="height" secondItem="parent" secondAttribute="height" multiplier="0.4" />
     <NSLayoutConstraint firstItem="background" firstAttribute="centerX" secondItem="parent" secondAttribute="centerX"/>
-    <NSLayoutConstraint firstItem="background" firstAttribute="centerY" secondItem="parent" secondAttribute="bottom"/>
+    <NSLayoutConstraint firstItem="background" firstAttribute="centerY" secondItem="parent" secondAttribute="top"/>
 
     <UIView id="container">
 
-        <UILabel id="versionHeader" fontName="AvenirNext-Regular" fontSize="50" textColor="black" textAlignment="center" adjustsFontSizeToFitWidth="true" minimumScaleFactor="0.1" text="iOS version"/>
-        <NSLayoutConstraint firstItem="versionHeader" firstAttribute="centerX" secondItem="parent" secondAttribute="centerX" />
-        <NSLayoutConstraint firstItem="versionHeader" firstAttribute="top" secondItem="parent" secondAttribute="top" />
+        <UILabel id="versionHeader" fontName="AvenirNext-Light" fontSize="18" textColor="#427AE6" textAlignment="center" adjustsFontSizeToFitWidth="true" minimumScaleFactor="0.1" text="iOS"/>
 
-        <UILabel id="version" fontName="AvenirNext-Heavy" fontSize="120" textColor="black" textAlignment="center" adjustsFontSizeToFitWidth="true" minimumScaleFactor="0.1" text="9.1" numberOfLines="1"/>
+        <UILabel id="version" fontName="AvenirNext-Medium" fontSize="60" textColor="#427AE6" textAlignment="center" adjustsFontSizeToFitWidth="true" minimumScaleFactor="0.1" text="9.1" numberOfLines="1"/>
         <NSLayoutConstraint firstItem="version" firstAttribute="centerX" secondItem="parent" secondAttribute="centerX" />
-        <NSLayoutConstraint firstItem="version" firstAttribute="top" secondItem="versionHeader" secondAttribute="bottom" constant="00" />
+        <NSLayoutConstraint firstItem="version" firstAttribute="top" secondItem="parent" secondAttribute="top" />
+        <NSLayoutConstraint firstItem="versionHeader" firstAttribute="baseline" secondItem="version" secondAttribute="baseline" />
+        <NSLayoutConstraint firstItem="version" firstAttribute="left" secondItem="versionHeader" secondAttribute="right" />
 
-        <UILabel id="hardware" fontName="AvenirNext-Regular" fontSize="50" textColor="#000000" textAlignment="center" adjustsFontSizeToFitWidth="true" minimumScaleFactor="0.1"/>
+        <UILabel id="hardware" fontName="AvenirNext-Regular" fontSize="36" textColor="#427AE6" textAlignment="center" adjustsFontSizeToFitWidth="true"  numberOfLines="0"  minimumScaleFactor="0.1"/>
         <NSLayoutConstraint firstItem="hardware" firstAttribute="centerX" secondItem="parent" secondAttribute="centerX" />
-        <NSLayoutConstraint firstItem="hardware" firstAttribute="top" secondItem="version" secondAttribute="bottom" constant="40" />
+        <NSLayoutConstraint firstItem="hardware" firstAttribute="width" secondItem="parent" secondAttribute="width" multiplier="0.9"/>
+        <NSLayoutConstraint firstItem="hardware" firstAttribute="top" secondItem="version" secondAttribute="bottom" constant="10" />
 
-        <UILabel id="warning" fontName="AvenirNext-Regular" fontSize="22" textColor="#000000" textAlignment="center" adjustsFontSizeToFitWidth="false" numberOfLines="0" text="Please do not upgrade iOS on this device"/>
+        <UILabel id="property" fontName="AvenirNext-Regular" fontSize="22" textColor="#427AE6" textAlignment="center" adjustsFontSizeToFitWidth="true"  numberOfLines="1"  minimumScaleFactor="0.1" text="Property of Small Planet Digital"/>
+        <NSLayoutConstraint firstItem="property" firstAttribute="centerX" secondItem="parent" secondAttribute="centerX" />
+        <NSLayoutConstraint firstItem="property" firstAttribute="width" secondItem="parent" secondAttribute="width" multiplier="0.9"/>
+        <NSLayoutConstraint firstItem="property" firstAttribute="top" secondItem="hardware" secondAttribute="bottom" constant="10" />
+
+        <UILabel id="warning" fontName="AvenirNext-Regular" fontSize="22" textColor="black" textAlignment="center" adjustsFontSizeToFitWidth="false" numberOfLines="0" text="Please do not upgrade iOS on this device"/>
         <NSLayoutConstraint firstItem="warning" firstAttribute="centerX" secondItem="parent" secondAttribute="centerX" />
         <NSLayoutConstraint firstItem="warning" firstAttribute="width" secondItem="parent" secondAttribute="width" multiplier="0.9"/>
-        <NSLayoutConstraint firstItem="warning" firstAttribute="top" secondItem="hardware" secondAttribute="bottom" constant="40" />
+        <NSLayoutConstraint firstItem="warning" firstAttribute="top" secondItem="property" secondAttribute="bottom" constant="10" />
         <NSLayoutConstraint firstItem="warning" firstAttribute="bottom" secondItem="parent" secondAttribute="bottom" />
 
     </UIView>
     <NSLayoutConstraint firstItem="container" firstAttribute="centerX" secondItem="parent" secondAttribute="centerX" />
     <NSLayoutConstraint firstItem="container" firstAttribute="width" secondItem="parent" secondAttribute="width" />
-    <NSLayoutConstraint firstItem="container" firstAttribute="centerY" secondItem="parent" secondAttribute="centerY" constant="-40" />
+    <NSLayoutConstraint firstItem="container" firstAttribute="bottom" secondItem="parent" secondAttribute="bottom" constant="-20" />
 
     <UIButton id="shareButton" />
     <NSLayoutConstraint firstItem="shareButton" ruleSet="fillSuperview" />

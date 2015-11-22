@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4096A831C01771300A86309 /* DeviceGuru.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4096A821C01771300A86309 /* DeviceGuru.swift */; };
 		C43812471BFF53E30089D58D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43812461BFF53E30089D58D /* AppDelegate.swift */; };
 		C43812491BFF53E30089D58D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43812481BFF53E30089D58D /* ViewController.swift */; };
 		C438124C1BFF53E30089D58D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C438124A1BFF53E30089D58D /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C4096A821C01771300A86309 /* DeviceGuru.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceGuru.swift; path = DeviceGuru/DeviceGuru.swift; sourceTree = SOURCE_ROOT; };
 		C43812431BFF53E30089D58D /* Splash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Splash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C43812461BFF53E30089D58D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C43812481BFF53E30089D58D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,12 +86,13 @@
 			isa = PBXGroup;
 			children = (
 				C43812461BFF53E30089D58D /* AppDelegate.swift */,
-				C43812481BFF53E30089D58D /* ViewController.swift */,
-				C438124A1BFF53E30089D58D /* Main.storyboard */,
 				C438124D1BFF53E30089D58D /* Assets.xcassets */,
-				C438124F1BFF53E30089D58D /* LaunchScreen.storyboard */,
+				C4096A821C01771300A86309 /* DeviceGuru.swift */,
 				C43812521BFF53E30089D58D /* Info.plist */,
+				C438124F1BFF53E30089D58D /* LaunchScreen.storyboard */,
+				C438124A1BFF53E30089D58D /* Main.storyboard */,
 				C470BD571BFF7F4E00E70F7F /* splash.xml */,
+				C43812481BFF53E30089D58D /* ViewController.swift */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4096A831C01771300A86309 /* DeviceGuru.swift in Sources */,
 				C43812491BFF53E30089D58D /* ViewController.swift in Sources */,
 				C43812471BFF53E30089D58D /* AppDelegate.swift in Sources */,
 			);

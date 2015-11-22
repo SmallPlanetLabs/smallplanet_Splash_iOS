@@ -1,3 +1,6 @@
 [submodule "Saturn"]
 	path = Saturn
 	url = https://github.com/smallplanetswift/Saturn.git
+[submodule "DeviceGuru"]
+	path = DeviceGuru
+	url = https://github.com/InderKumarRathore/DeviceGuru.git
