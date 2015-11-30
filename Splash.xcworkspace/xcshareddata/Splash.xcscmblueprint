@@ -1,20 +1,28 @@
 {
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "81AAAAE935391A0AA0C8C99BED129B09689E7BC8",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "BCC2F40490CFE9B80A4FE9BCCD0E2FC627E90717" : 0,
     "CD451456114697EA9F81CAC295E3A683DFAA0024" : 0,
-    "BCC2F40490CFE9B80A4FE9BCCD0E2FC627E90717" : 0
+    "81AAAAE935391A0AA0C8C99BED129B09689E7BC8" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "10D9A921-F385-4B1C-8477-FC3575F3EC88",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "BCC2F40490CFE9B80A4FE9BCCD0E2FC627E90717" : "Splash\/DeviceGuru\/",
     "CD451456114697EA9F81CAC295E3A683DFAA0024" : "Splash\/Saturn\/",
-    "BCC2F40490CFE9B80A4FE9BCCD0E2FC627E90717" : "Splash\/DeviceGuru\/"
+    "81AAAAE935391A0AA0C8C99BED129B09689E7BC8" : "Splash\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "Splash",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Splash.xcworkspace",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/smallplanetswift\/Splash.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "81AAAAE935391A0AA0C8C99BED129B09689E7BC8"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/InderKumarRathore\/DeviceGuru.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
